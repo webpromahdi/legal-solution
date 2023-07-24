@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- fontaewsome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- Others -->
 
     <style>
         .font-eb{
@@ -25,14 +26,23 @@
             color: #707070;
         }
         .btn-color{
-            background-color: #B68C5A;;
+            background-color: #B68C5A;
+        }
+        .hero-banner{
+            background-image: url("./images/banner.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        button{
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
 <body>
-    <header>
+    <header class="lg:max-w-[80%] max-lg:max-w-[96%] m-auto h-screen">
         <!-- navication menu -->
-        <nav class="lg:max-w-[86%] max-lg:max-w-[96%] m-auto py-6">
+        <nav class="py-6">
             <div class="navbar bg-base-100 font-poppins">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -63,6 +73,24 @@
                 </div>
               </div>
         </nav>
+
+        <!-- hero section -->
+        <section>
+            <div class="hero min-h-[80vh] hero-banner">
+                <div class="hero-content text-center text-white">
+                  <div class="max-w-2xl">
+                    <h1 class="text-7xl max-md:text-6xl font-bold font-eb leading-tight max-md:leading-tight">We Provide Effective Legal Solutions</h1>
+                    <p class="py-6 font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <div class="flex w-full justify-center items-end">
+                        <div class="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
+                          <input placeholder="Search your services" type="text" id="hero-field" name="hero-field" class="w-full bg-white rounded-lg border focus:ring-2 focus:ring-[#B68C5A]  focus:bg-transparent focus:border-[#B68C5A] text-base outline-none text-white py-2 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <button class="btn btn-color border-none text-white px-8">Search</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </section>
     </header>
 
 
